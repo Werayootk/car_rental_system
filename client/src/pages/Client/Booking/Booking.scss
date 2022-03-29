@@ -1,0 +1,186 @@
+.search-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+}
+
+.inf_loop {
+    overflow: scroll;
+    width: 730px;
+    height: auto;
+}
+
+.spin-position {
+    padding-left: 345px;
+}
+
+.filter-section {
+    display: block;
+    font-family: Roboto,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #000;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.filter-section p {
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.filter__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.filter-section .filter__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.clean-btn {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0078ff;
+    font-size: 12px;
+}
+
+.filter__tab {
+    background-color: #e9ecef;
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #d1d6dd;
+}
+
+.filter-section .tab-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.filter-section .tab-title p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.tab-content {
+    max-height: 1500px;
+    overflow: unset;
+    background-color: #eef1f4;
+}
+
+.filter-category {
+    // padding: 10px;
+    display: flex;
+    width: 100%;
+    padding: 6px 10px;
+    min-height: 88px;
+    justify-content: center;
+}
+
+.category-item {
+
+}
+
+.d-inline-flex {
+    display: inline-flex!important;
+}
+
+.flex-row {
+    flex-direction: row!important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap!important;
+}
+
+.filter-bar {
+    padding: 10px 0;
+}
+
+.car-summary {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #4a4a4a;
+}
+
+.filter-bar .filter-badge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.filter-bar .filter-sort {
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.filter-bar .filter-sort .sort-item--title {
+    cursor: default;
+    flex-grow: 0;
+    flex-basis: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #e9ecef;
+    border-radius: 2px 0 0 2px;
+}
+
+.filter-bar .filter-sort .sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 5px 10px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    cursor: pointer; 
+    color: #4a4a4a;
+}
+
+.filter-bar .filter-sort .sort-item.active {
+    background-color: #30374b;
+    color: #fff;
+}
+
+.car-listing {
+    transform: translateZ(0);
+}
+
+.row {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+

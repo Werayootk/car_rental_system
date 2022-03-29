@@ -1,0 +1,103 @@
+.center-form-Book {
+  position: relative;
+  left: 50%;
+  width: 30%;
+  // top: 50%;
+  margin-top: 20%;
+  transform: translate(-50%, -50%);
+//   border: 5px solid #ffff00;
+  padding: 10px;
+  background-color: #ffff;
+}
+
+.contact_form_wrapper {
+    padding: 0 16px;
+}
+
+.form_title {
+    font-size: 18px;
+    color: #0051ad;
+    font-weight: 700;
+}
+
+.form_title p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.contact_form_wrapper form .form-group {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.contact_form_wrapper form .form-group input, .contact_form_wrapper form .form-group select {
+    max-height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.2em + 1.75rem + 2px);
+    padding: .875rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #30374b;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c3c3c3;
+    border-radius: .125rem;
+}
+
+.radio-form {
+    display: flex;
+    justify-content: center;
+}
+
+.mail-icon {
+    position: relative;
+    top: 25px;
+    right: -14px;
+  }
+
+  .mobile-icon {
+    position: relative;
+    top: 25px;
+    right: -14px;
+  }
+
+  .submit_button_wrapper_reserve {
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #eceeef;
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .button_box_reserve {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 115px;
+  }
+
+  .submit_button_wrapper_reserve a {
+    flex: 1 1;
+  }
+
+  .btn-secondary {
+    width: 30%;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    box-shadow: none;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary_reserve {
+      width: 50%;
+      color: #fff;
+      background-color: #0078ff;
+      border-color: #0078ff;
+  }
