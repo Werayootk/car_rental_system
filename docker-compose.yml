@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  mysql:
+    container_name: car_easy_life
+    image: mysql/mysql-server:8.0.23
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: car_easy_life
+      MYSQL_ROOT_HOST: "%"
+    command: --lower_case_table_names=1
