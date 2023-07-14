@@ -50,7 +50,7 @@ const BookingReserving = () => {
     console.log('handleLoadScript');
     OmiseCard = window.OmiseCard;
     OmiseCard.configure({
-      publicKey: process.env.publicKey,
+      publicKey: process.env.publicKey || "pkey_test_5r20sb3568n09tz0gj6",
       currency: "thb",
       frameLabel: "Car easy life",
       submitLabel: "ชำระเงิน",

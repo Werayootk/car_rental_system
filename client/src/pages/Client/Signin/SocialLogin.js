@@ -64,7 +64,7 @@ const SocialLogin = () => {
           href="http://localhost:8000/user/google"
         > */}
           <GoogleLogin
-            clientId={process.env.GOOGLE_CLIENT_ID} 
+            clientId={process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com"} 
             onSuccess={signinWithGoogle}
             onFailure={signinWithGoogle}
             cookiePolicy={"single_host_origin"}
@@ -82,7 +82,7 @@ const SocialLogin = () => {
           href="http://localhost:8000/user/facebook"
         >
         <FacebookLogin
-          appId={process.env.FACEBOOK_APP_ID}
+          appId={process.env.FACEBOOK_APP_ID || 691743551857593}
           fields='name,email'
           scope='public_profile, email'
           callback={signinWithFaceBook}

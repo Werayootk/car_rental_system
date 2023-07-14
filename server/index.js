@@ -56,12 +56,16 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: err.message });
 });
 
+app.listen(process.env.PORT || 8000, () => {
+    console.log(`Server is running at port ${process.env.PORT}`);
+});
+
 /**
  * Force Sync DB
  */
-db.sequelize.sync({ force: true }).then(() => {
-  console.log("Data Base is Sync");
-  app.listen(process.env.PORT || 8000, () => {
-    console.log(`Server is running at port ${process.env.PORT}`);
-  });
-});
+// db.sequelize.sync({ force: true }).then(() => {
+//   console.log("Data Base is Sync");
+//   app.listen(process.env.PORT || 8000, () => {
+//     console.log(`Server is running at port ${process.env.PORT}`);
+//   });
+// });

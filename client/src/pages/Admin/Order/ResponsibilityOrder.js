@@ -118,7 +118,7 @@ const ResponsibilityOrderElement = (props) => {
       { name: ['end_datetime'], value: orderThis[0].end_datetime },
       // { name: ['end_datetime'], value: moment(orderThis[0].end_datetime).format("DD-MM-YYYY hh:mm:ss") },
       { name: ['refund'], value: orderThis[0].refund },
-      // { name: ['booking_status'], value: orderThis[0].booking_status },
+      //{ name: ['booking_status'], value: orderThis[0].booking_status },
     ]);
   };
 
@@ -213,7 +213,7 @@ const ResponsibilityOrderElement = (props) => {
       <Modal
         className="car-modal-title"
         title="รายละเอียดรถ"
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={handleCancel}
         footer={[
           <Button key="back" onClick={handleCancel}>
@@ -235,7 +235,8 @@ const ResponsibilityOrderElement = (props) => {
           wrapperCol={{ xs: { span: 12 } }}
           form={form}
           fields={orderForm}
-          onFieldsChange={orderForm}
+          // onValuesChange={orderForm}
+          // onFieldsChange={orderForm}
           onFinish={onFinish}
         >
           <Form.Item

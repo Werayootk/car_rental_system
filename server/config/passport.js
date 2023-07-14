@@ -34,7 +34,7 @@ passport.use(
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.GOOGLE_CLIENT_ID ,
+      clientID: process.env.GOOGLE_CLIENT_ID || "405179135262-nrr7s0ugiirnjb3i09b691qua28lvksg.apps.googleusercontent.com",
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL: `http://localhost:8000/user/google/callback`,
       passReqToCallback: true,
@@ -83,7 +83,7 @@ passport.use(
 passport.use(
   new FacebookStrategy(
     {
-      clientID: process.env.FACEBOOK_APP_ID,
+      clientID: process.env.FACEBOOK_APP_ID || 691743551857593,
       clientSecret: process.env.FACEBOOK_APP_SECRET,
       callbackURL: `http://localhost:8000/user/facebook/callback`,
       profileFields: ['id', 'displayName', 'email', 'first_name', 'middle_name', 'last_name'],

@@ -1,8 +1,8 @@
 const { Op } = require("sequelize");
 const db = require("../models");
 const omise = require("omise")({
-  publicKey: process.env.OMISE_PUBLIC_KEY,
-  secretKey: process.env.OMISE_SECRET_KEY
+  publicKey: process.env.OMISE_PUBLIC_KEY || "pkey_test_5r20sb3568n09tz0gj6",
+  secretKey: process.env.OMISE_SECRET_KEY || "skey_test_5r20sb35fpo58ac6370"
 })
 
  exports.updateBillStatusByUser = async (req, res, next) => {
